@@ -1,0 +1,5 @@
+{
+  "name": "AetherLens: AI Image Generator",
+  "description": "An advanced AI-powered image generator with style presets, customization controls, and real-time previews. Create stunning visuals from text prompts using cutting-edge generative models.",
+  "requestFramePermissions": []
+}

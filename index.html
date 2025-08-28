@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-g" />
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🎨</text></svg>">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AetherLens: AI Image Generator</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#8B5CF6', // purple
+              'secondary': '#3B82F6', // blue
+              'accent': '#EC4899', // pink
+              'dark-bg': '#111827',
+              'dark-card': '#1f2937',
+              'dark-border': 'rgba(255, 255, 255, 0.1)',
+            },
+            backdropBlur: {
+              'xl': '24px',
+            },
+            keyframes: {
+              'toast-in': {
+                '0%': { transform: 'translateX(100%)', opacity: 0 },
+                '100%': { transform: 'translateX(0)', opacity: 1 },
+              },
+            },
+            animation: {
+              'toast-in': 'toast-in 0.5s ease-out forwards',
+            },
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.1.1/",
+    "react": "https://aistudiocdn.com/react@^19.1.1",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.1.1/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.16.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-dark-bg text-gray-200 font-sans">
+    <div id="root"></div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
